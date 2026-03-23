@@ -102,3 +102,50 @@ header{
     text-align: center;
     text-decoration: none;
 }
+
+/* Adaptação para celular */
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .imagem img {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Cards */
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards img {
+        padding: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    /* Botão */
+    .botao_principal {
+        margin-top: 20px;
+    }
+}
